@@ -6,7 +6,7 @@ import react from "../assets/badges/react.svg";
 import mongo from "../assets/badges/mongodb.svg";
 import nodejs from "../assets/badges/nodejs.svg";
 import html5 from "../assets/badges/html5.svg";
-import travelblog from "../assets/travelblog.jpg";
+import travelblog from "../assets/travel.jpg";
 import dadjoke from "../assets/dadjokegenerator.jpg";
 import sass from "../assets/badges/sass.png";
 import webpack from "../assets/badges/webpack.png";
