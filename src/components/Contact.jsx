@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -20,23 +21,25 @@ const Contact = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
+      .then(() => toast.success("Message sent!"))
+      .catch((error) =>
+        toast.error(`There was an issue sending message: ${error}`)
+      );
   };
 
   return (
     <>
       <section id="contact" className="contact--container">
         <form
-          netlify
+          netlify="true"
           name="contact"
           className="contact--form"
           onSubmit={handleSubmit}
         >
           <h2>Get in touch with me</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
+            Get in touch with me if you can cool ideas or want me to work with
+            you!
           </p>
           <div className="contact--form__label--inputs">
             <label htmlFor="name">Name</label>
