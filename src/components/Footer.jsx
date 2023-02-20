@@ -1,8 +1,8 @@
 import React from "react";
-import stackoverflow from "../assets/stackoverflow.png";
-import linkedin from "../assets/linkedin.png";
-import github from "../assets/github.svg";
-import codewars from "../assets/codewars.svg";
+import stackoverflow from "@assets/stackoverflow.png";
+import linkedin from "@assets/linkedin.png";
+import github from "@assets/github.svg";
+import codewars from "@assets/codewars.svg";
 
 const Footer = () => {
   return (
