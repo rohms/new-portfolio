@@ -1,4 +1,5 @@
 import React from "react";
+import rhm from "@assets/rhmsmall.jpg";
 
 const About = () => {
   return (
@@ -28,11 +29,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            <img
-              className="heroimage"
-              alt="hero"
-              src="../src/assets/rhmsmall.jpg"
-            />
+            <img className="heroimage" alt="hero" src={rhm} />
           </div>
         </div>
       </section>

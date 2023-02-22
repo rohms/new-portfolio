@@ -115,7 +115,7 @@ const projects = [
     subtitle: "Learning basics of webpack 5",
     link: "https://silly-kitten-2afd87.netlify.app",
     info: "",
-    image: "",
+    image: dadjoke,
     description:
       "I got to use Webpack 5, sass/scss, added all loaders needed for the different filetypes and babel so that the webpage will work also with older browsers. I used also the webpack-bundle-analyzer so that you get to see what was used. Axios was used for fetching the jokes from: https://icanhazdadjoke.com/ I used also the HTMLWebpackPlugin.",
     skills: [
