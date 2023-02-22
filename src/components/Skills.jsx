@@ -33,7 +33,8 @@ const Skills = () => {
           manipulating and displaying it. Alining and making things look pretty
           with CSS. Creating oldschool Email templates with HTML so that every
           email provider can open them. Learning to keep things type safe with
-          TypeScript.
+          TypeScript. Having my first steps and writing GraphQL queries and
+          mutations. Learning RTK (Redux Toolkit) for state management.
         </p>
         <p>
           Learning how to use Figma dynamically and how to fetch Figma via API.

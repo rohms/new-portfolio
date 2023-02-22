@@ -173,51 +173,44 @@ const Projects = () => {
   return (
     <>
       <section id="projects" className="my--projects">
-        <div className="projects--container">
-          <div className="projects--container__info">
-            <h1>Apps and projects I have built</h1>
-          </div>
-          <div className="projects--container__projects">
-            {projects.map((project) => (
-              <Fragment key={project.name}>
-                <a
-                  href={`${project.link}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  key={project.name}
-                >
-                  <img
-                    src={project.image}
-                    alt="project picture"
-                    className="project--image"
-                  />
-                </a>
-                <div className="projects--container__project">
-                  <span className="project--headers">
-                    <h1>{project.name}</h1>
-                    <h3>{project.subtitle}</h3>
-                  </span>
-
-                  <p>Skills used:</p>
-                  <div className="badges--container">
-                    {project?.skills?.map((skill, idx) => (
-                      <Badge
-                        key={idx}
-                        imageSrc={skill.src}
-                        altText={skill.alt}
-                      />
-                    ))}
-                  </div>
-
-                  <p className="projects--container__text">
-                    {project.description}
-                  </p>
-                  <span className="projects--container__divider"></span>
-                </div>
-              </Fragment>
-            ))}
-          </div>
+        <div className="projects--container__info">
+          <h1>Apps and projects I have built</h1>
         </div>
+        {projects.map((project) => (
+          <Fragment key={project.name}>
+            <a
+              href={`${project.link}`}
+              target="_blank"
+              rel="noreferrer"
+              key={project.name}
+            >
+              <img
+                src={project.image}
+                alt="project picture"
+                className="project--image"
+              />
+            </a>
+            <div className="projects--container__project">
+              <span className="project--headers">
+                <h1>{project.name}</h1>
+                <h3>{project.subtitle}</h3>
+              </span>
+              <div className="project--body">
+                <p>Skills used:</p>
+                <div className="badges--container">
+                  {project?.skills?.map((skill, idx) => (
+                    <Badge key={idx} imageSrc={skill.src} altText={skill.alt} />
+                  ))}
+                </div>
+
+                <p className="projects--container__text">
+                  {project.description}
+                </p>
+              </div>
+              <span className="projects--container__divider"></span>
+            </div>
+          </Fragment>
+        ))}
       </section>
     </>
   );

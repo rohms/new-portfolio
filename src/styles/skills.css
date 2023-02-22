@@ -1,11 +1,3 @@
-.section--skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
 .section--skills__badges {
   display: grid;
   column-gap: 20px;

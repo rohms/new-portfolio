@@ -16,15 +16,23 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => toast.success("Message sent!"))
-      .catch((error) =>
-        toast.error(`There was an issue sending message: ${error}`)
-      );
+    if (name === "") {
+      toast.info("Please fill in your name");
+    } else if (email === "") {
+      toast.info("Please fill in the email field");
+    } else if (message === "") {
+      toast.info("Please write a message first 😎");
+    } else {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", name, email, message }),
+      })
+        .then(() => toast.success("Message sent!"))
+        .catch((error) =>
+          toast.error(`There was an issue sending message: ${error}`)
+        );
+    }
   };
 
   return (
