@@ -102,8 +102,9 @@ nav > a:hover {
 
 .about--container__body > h1 {
   background: -webkit-linear-gradient(
-    34deg,
-    rgb(180, 58, 180) 0%,
+    180deg,
+    rgb(145, 250, 75) 0%,
+    rgb(28, 24, 250) 35%,
     rgb(255, 10, 112) 100%
   );
   -webkit-background-clip: text;
@@ -114,7 +115,7 @@ nav > a:hover {
 }
 
 .about--container__body > p {
-  max-width: 75%;
+  max-width: 60%;
   margin: 1rem;
 }
 
@@ -196,8 +197,12 @@ nav > a:hover {
   margin: 0 1rem 3rem 1rem;
 }
 
+.section--skills__subheader {
+  margin-top: 1rem;
+}
+
 .section--skills > p {
-  max-width: 75%;
+  max-width: 65%;
 }
 
 .skills-container {
@@ -242,12 +247,6 @@ nav > a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-/* for both long text and skills used */
-.projects--container__project > p {
-  text-align: left;
-  margin-top: 1rem;
   max-width: 75%;
 }
 

@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [mailerState, setMailerState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const encode = (data) => {
     return Object.keys(data)
@@ -14,21 +16,35 @@ const Contact = () => {
       .join("&");
   };
 
+  const handleChange = (e) => {
+    setMailerState((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name === "") {
+    if (mailerState.name === "") {
       toast.info("Please fill in your name");
-    } else if (email === "") {
+    } else if (mailerState.email === "") {
       toast.info("Please fill in the email field");
-    } else if (message === "") {
-      toast.info("Please write a message first 😎");
+    } else if (mailerState.message === "") {
+      toast.info("Please write a message first");
     } else {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", name, email, message }),
+        body: encode({ "form-name": "contact", ...mailerState }),
       })
-        .then(() => toast.success("Message sent!"))
+        .then(
+          () => toast.success("Message sent! 🦄"),
+          setMailerState({
+            name: "",
+            email: "",
+            message: "",
+          })
+        )
         .catch((error) =>
           toast.error(`There was an issue sending message: ${error}`)
         );
@@ -39,7 +55,7 @@ const Contact = () => {
     <>
       <section id="contact" className="contact--container">
         <form
-          netlify="true"
+          data-netlify="true"
           name="contact"
           className="contact--form"
           onSubmit={handleSubmit}
@@ -55,7 +71,8 @@ const Contact = () => {
               type="text"
               id="name"
               name="name"
-              onChange={(e) => setName(e.target.value)}
+              value={mailerState.name}
+              onChange={handleChange}
             />
 
             <label htmlFor="email">Email</label>
@@ -63,14 +80,16 @@ const Contact = () => {
               type="email"
               id="email"
               name="email"
-              onChange={(e) => setEmail(e.target.value)}
+              value={mailerState.email}
+              onChange={handleChange}
             />
 
             <label htmlFor="message">Message</label>
             <textarea
               id="message"
               name="message"
-              onChange={(e) => setMessage(e.target.value)}
+              value={mailerState.message}
+              onChange={handleChange}
             />
 
             <button type="submit" className="contact--form__submit">

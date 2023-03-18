@@ -29,12 +29,11 @@ const Skills = () => {
       <section id="skills" className="section--skills">
         <h1>Skills &amp; Technologies</h1>
         <p>
-          I have worked the most with React and JavaScript. Fetching data,
-          manipulating and displaying it. Alining and making things look pretty
+          I have worked mostly with React and JavaScript. Fetching data,
+          manipulating and displaying it. Aligning and making things look pretty
           with CSS. Creating oldschool Email templates with HTML so that every
-          email provider can open them. Learning to keep things type safe with
-          TypeScript. Having my first steps and writing GraphQL queries and
-          mutations. Learning RTK (Redux Toolkit) for state management.
+          email provider can open them. Knowing how to keep things type safe
+          with TypeScript.
         </p>
         <p>
           Learning how to use Figma dynamically and how to fetch Figma via API.
@@ -43,6 +42,13 @@ const Skills = () => {
           write tests with Vitest and React Testing Library to catch those
           little bugs! 🧐
         </p>
+        <p>
+          Currently learning GraphQL queries and mutations and RTK (Redux
+          Toolkit) for state management.
+        </p>
+        <h2 className="section--skills__subheader">
+          Some libraries and frameworks I have been working with:
+        </h2>
         <div className="section--skills__badges">
           {skillBadges.map((skill) => (
             <Badge

@@ -144,7 +144,7 @@ const projects = [
   {
     name: "React TypeScript Quiz",
     subtitle: "Learning to use TypeScript with react",
-    link: "https://silly-kitten-2afd87.netlify.app",
+    link: "https://stellar-quokka-69a049.netlify.app/",
     info: "",
     image: reactTS,
     description:
