@@ -1,5 +1,5 @@
 import React from "react";
-import rhm from "@assets/rhmsmall.jpg";
+import rhm from "@assets/rhsmall.jpg";
 
 const About = () => {
   return (
