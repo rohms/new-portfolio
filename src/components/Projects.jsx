@@ -1,5 +1,5 @@
 import React from "react";
-import lnight from "@assets/lnight.jpg";
+import lnight from "@assets/lnightn.jpg";
 import css3 from "@assets/badges/css.svg";
 import js from "@assets/badges/javascript-logo.png";
 import react from "@assets/badges/react.svg";
