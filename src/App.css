@@ -96,6 +96,11 @@ nav > a:hover {
   margin-left: 0.75rem;
 }
 
+.toggle p {
+  font-size: small;
+  margin-right: 0.2rem;
+}
+
 /*About*/
 .about-container {
   padding-top: 3rem;

@@ -8,9 +8,19 @@ const ColorToggle = () => {
   const { darkMode, toggleTheme } = useThemeContext();
 
   return (
-    <div>
+    <div className="toggle">
       <IconButton sx={{ mr: 1 }} onClick={() => toggleTheme()} color="inherit">
-        {darkMode ? <Brightness7Icon /> : <Brightness4Icon />}
+        {darkMode ? (
+          <>
+            <p>light</p>
+            <Brightness7Icon />
+          </>
+        ) : (
+          <>
+            <p>dark</p>
+            <Brightness4Icon />
+          </>
+        )}
       </IconButton>
     </div>
   );
