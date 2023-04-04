@@ -10,14 +10,12 @@ import travelblog from "@assets/travel.jpg";
 import dadjoke from "@assets/dadjokegenerator.jpg";
 import sass from "@assets/badges/sass.png";
 import webpack from "@assets/badges/webpack.png";
-import reactTS from "@assets/ReactTSQuiz.jpg";
+import reactTS from "@assets/ReactTsQuiz.jpg";
 import TS from "@assets/badges/typescript.png";
 import randomusers from "@assets/randomusers.jpg";
 import randomp from "@assets/random.jpg";
 import tenzies from "@assets/tenzies.jpg";
 
-import { Fragment } from "react";
-import { Badge } from "./Badge";
 import { Card } from "./Card";
 
 const projects = [

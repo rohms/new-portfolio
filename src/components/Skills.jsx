@@ -10,7 +10,6 @@ import Vite from "@assets/badges/vite-logo.png";
 import ReactTesting from "@assets/badges/testing-library.svg";
 import "../styles/skills.css";
 import { Badge } from "./Badge";
-import { Tooltip } from "@mui/material";
 
 const skillBadges = [
   { imgSrc: CSS3, alt: "css-logo" },

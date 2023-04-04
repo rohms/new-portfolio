@@ -1,5 +1,5 @@
 import React from "react";
-// import rhm from "@assets/rhmsmall.jpg";
+import rhm from "@assets/rhmsmall.jpg";
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
               I'm Roosa <br /> and I build FRONTEND
             </h1>
             <div className="about-container__hello">
-              {/* <img className="heroimage" alt="hero portrait" src={rhm} /> */}
+              <img className="heroimage" alt="hero portrait" src={rhm} />
               <h2>Hello there! 👋</h2>
             </div>
             <p>
