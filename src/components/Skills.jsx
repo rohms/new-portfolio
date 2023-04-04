@@ -1,6 +1,6 @@
 import React from "react";
 import CSS3 from "@assets/badges/css.svg";
-import HTML5 from "@assets/badges/html5.svg";
+import HTML5 from "@assets/badges/html.svg";
 import JS from "@assets/badges/javascript-logo.png";
 import Figma from "@assets/badges/Figma-logo.svg";
 import ReactLogo from "@assets/badges/react.svg";

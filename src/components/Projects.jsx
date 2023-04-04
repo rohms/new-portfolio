@@ -5,7 +5,7 @@ import js from "@assets/badges/javascript-logo.png";
 import react from "@assets/badges/react.svg";
 import mongo from "@assets/badges/mongodb.svg";
 import nodejs from "@assets/badges/nodejs.svg";
-import html5 from "@assets/badges/html5.svg";
+import html5 from "@assets/badges/html.svg";
 import travelblog from "@assets/travel.jpg";
 import dadjoke from "@assets/dadjoke.jpg";
 import sass from "@assets/badges/sass.png";
