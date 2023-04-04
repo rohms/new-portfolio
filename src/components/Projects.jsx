@@ -7,12 +7,12 @@ import mongo from "@assets/badges/mongodb.svg";
 import nodejs from "@assets/badges/nodejs.svg";
 import html5 from "@assets/badges/html5.svg";
 import travelblog from "@assets/travel.jpg";
-import dadjoke from "@assets/dadjokegenerator.jpg";
+import dadjoke from "@assets/dadjoke.jpg";
 import sass from "@assets/badges/sass.png";
 import webpack from "@assets/badges/webpack.png";
-import reactTS from "@assets/ReactTsQuiz.jpg";
+import reactTS from "@assets/reactquiz.jpg";
 import TS from "@assets/badges/typescript.png";
-import randomusers from "@assets/randomusers.jpg";
+import randomusers from "@assets/randoms.jpg";
 import randomp from "@assets/random.jpg";
 import tenzies from "@assets/tenzies.jpg";
 
