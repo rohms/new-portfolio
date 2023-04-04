@@ -1,4 +1,4 @@
-.section--skills__badges {
+.section-skills__badges {
   display: grid;
   column-gap: 20px;
   row-gap: 15px;
@@ -6,7 +6,7 @@
   padding: 10px;
 }
 
-.badges--container {
+.badges-container {
   display: flex;
   flex-wrap: wrap;
 }

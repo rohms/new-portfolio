@@ -10,16 +10,6 @@ const Footer = () => {
       <ul className="social-list">
         <li className="social-list__item">
           <a
-            href="https://www.codewars.com/users/rohms"
-            className="social-list__link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={codewars} alt="codewars-logo" />
-          </a>
-        </li>
-        <li className="social-list__item">
-          <a
             href="https://stackoverflow.com/users/17149568/rohms"
             className="social-list__link"
             target="_blank"
@@ -49,6 +39,17 @@ const Footer = () => {
           </a>
         </li>
       </ul>
+      <a
+        href="https://www.codewars.com/users/rohms"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          className="codewars-badge"
+          src="https://www.codewars.com/users/rohms/badges/micro"
+          alt="codewars-status"
+        />
+      </a>
     </footer>
   );
 };

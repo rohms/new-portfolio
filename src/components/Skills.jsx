@@ -10,6 +10,7 @@ import Vite from "@assets/badges/vite-logo.png";
 import ReactTesting from "@assets/badges/testing-library.svg";
 import "../styles/skills.css";
 import { Badge } from "./Badge";
+import { Tooltip } from "@mui/material";
 
 const skillBadges = [
   { imgSrc: CSS3, alt: "css-logo" },
@@ -26,7 +27,7 @@ const skillBadges = [
 const Skills = () => {
   return (
     <>
-      <section id="skills" className="section--skills">
+      <section id="skills" className="section-skills">
         <h1>Skills &amp; Technologies</h1>
         <p>
           I have worked mostly with React and JavaScript. Fetching data,
@@ -46,10 +47,12 @@ const Skills = () => {
           Currently learning GraphQL queries and mutations and RTK (Redux
           Toolkit) for state management.
         </p>
-        <h2 className="section--skills__subheader">
+
+        <h2 className="section-skills__subheader">
           Some libraries and frameworks I have been working with:
         </h2>
-        <div className="section--skills__badges">
+
+        <div className="section-skills__badges">
           {skillBadges.map((skill) => (
             <Badge
               key={skill.alt}
