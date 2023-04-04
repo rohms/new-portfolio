@@ -1,6 +1,6 @@
 import React from "react";
 import lnight from "@assets/lnight.jpg";
-import css3 from "@assets/badges/css3.svg";
+import css3 from "@assets/badges/css.svg";
 import js from "@assets/badges/javascript-logo.png";
 import react from "@assets/badges/react.svg";
 import mongo from "@assets/badges/mongodb.svg";
