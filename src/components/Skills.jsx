@@ -1,13 +1,13 @@
 import React from "react";
 import CSS3 from "@assets/badges/css.svg";
 import HTML5 from "@assets/badges/html.svg";
-import JS from "@assets/badges/javascript-logo.png";
-import Figma from "@assets/badges/Figma-logo.svg";
+import JS from "@assets/badges/javascriptlogo.png";
+import Figma from "@assets/badges/Figmalogo.svg";
 import ReactLogo from "@assets/badges/react.svg";
 import Story from "@assets/badges/storybook.png";
 import TS from "@assets/badges/typescript.png";
-import Vite from "@assets/badges/vite-logo.png";
-import ReactTesting from "@assets/badges/testing-library.svg";
+import Vite from "@assets/badges/vitelogo.png";
+import ReactTesting from "@assets/badges/testinglibrary.svg";
 import "../styles/skills.css";
 import { Badge } from "./Badge";
 
