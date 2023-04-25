@@ -14,7 +14,9 @@ const Card = ({ card }) => {
       <div className="card__content">
         <p className="card__title">{name}</p>
         {gitrepo ? (
-          <a href={`${gitrepo}`}>Repo link</a>
+          <a className="card__link" href={`${gitrepo}`}>
+            Repo link
+          </a>
         ) : (
           <div className="invisible">&nbsp;</div>
         )}

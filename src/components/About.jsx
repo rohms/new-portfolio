@@ -12,13 +12,13 @@ const About = () => {
             </h1>
             <div className="about-container__hello">
               <img className="heroimage" alt="hero portrait" src={rhm} />
-              <h2>Hello there! 👋</h2>
+              <h2 className="hide">Hello there! 👋</h2>
             </div>
             <p>
               I'm a frontend developer with some backend experience and with
-              IT-support background. <br />I have been working mainly with
-              React, JavaScript, HTML5, CSS and TypeScript. <br /> See below
-              some of my projects and get in touch!
+              IT-support background. I have been working mainly with React,
+              JavaScript, HTML5, CSS and TypeScript. See below some of my
+              projects and get in touch!
             </p>
           </div>
         </div>

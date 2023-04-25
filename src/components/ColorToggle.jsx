@@ -9,7 +9,11 @@ const ColorToggle = () => {
 
   return (
     <div className="toggle">
-      <IconButton sx={{ mr: 1 }} onClick={() => toggleTheme()} color="inherit">
+      <IconButton
+        className="toggle__custom-button"
+        onClick={() => toggleTheme()}
+        color="inherit"
+      >
         {darkMode ? (
           <>
             <p>light</p>

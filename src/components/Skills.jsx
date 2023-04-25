@@ -8,6 +8,8 @@ import Story from "@assets/badges/storybook.png";
 import TS from "@assets/badges/typescript.png";
 import Vite from "@assets/badges/vitelogo.png";
 import ReactTesting from "@assets/badges/testinglibrary.svg";
+import graphql from "@assets/badges/graphql.png";
+import vue from "@assets/badges/vue.svg";
 import "../styles/skills.css";
 import { Badge } from "./Badge";
 
@@ -21,6 +23,8 @@ const skillBadges = [
   { imgSrc: Story, alt: "storybook-logo" },
   { imgSrc: Vite, alt: "vite-logo" },
   { imgSrc: ReactTesting, alt: "react testing library logo" },
+  { imgSrc: graphql, alt: "graphql" },
+  { imgSrc: vue, alt: "vue" },
 ];
 
 const Skills = () => {

@@ -60,7 +60,7 @@ const Contact = () => {
           className="contact-form"
           onSubmit={handleSubmit}
         >
-          <h2>Get in touch with me</h2>
+          <h1>Get in touch with me</h1>
           <p>
             Get in touch with me if you can cool ideas or want me to work with
             you!

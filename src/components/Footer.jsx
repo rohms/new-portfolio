@@ -1,8 +1,7 @@
 import React from "react";
-import stackoverflow from "/stackoverflow.png";
+import stackoverflow from "/stack.svg";
 import linkedin from "/linkedin.png";
 import github from "/github.svg";
-import codewars from "/codewars.svg";
 
 const Footer = () => {
   return (
@@ -38,18 +37,18 @@ const Footer = () => {
             <img src={github} alt="github-logo" />
           </a>
         </li>
+        <a
+          href="https://www.codewars.com/users/rohms"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="codewars-badge"
+            src="https://www.codewars.com/users/rohms/badges/micro"
+            alt="codewars-status"
+          />
+        </a>
       </ul>
-      <a
-        href="https://www.codewars.com/users/rohms"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          className="codewars-badge"
-          src="https://www.codewars.com/users/rohms/badges/micro"
-          alt="codewars-status"
-        />
-      </a>
     </footer>
   );
 };

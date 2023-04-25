@@ -15,6 +15,8 @@ import TS from "@assets/badges/typescript.png";
 import randomusers from "@assets/randoms.jpg";
 import randomp from "@assets/random.jpg";
 import tenzies from "@assets/tenzies.jpg";
+import vue from "@assets/learningvue.jpg";
+import tictactoe from "@assets/tictac.jpg";
 
 import { Card } from "./Card";
 
@@ -114,6 +116,27 @@ const projects = [
     ],
   },
   {
+    name: "React Tic Tac Toe",
+    subtitle: "Practising React",
+    link: "https://neon-gnome-e9ee7d.netlify.app/",
+    info: "",
+    image: tictactoe,
+    gitrepo: "https://github.com/rohms/react-tic-tac-toe",
+    description: "A React Tic Tac Toe game",
+    skills: [
+      {
+        name: "css3",
+        src: css3,
+        alt: "css3-logo",
+      },
+      {
+        name: "react",
+        src: react,
+        alt: "react-logo",
+      },
+    ],
+  },
+  {
     name: "Travel blog",
     subtitle: "A small travel blog with ReactJS",
     link: "https://kaleidoscopic-bubblegum-ef6c97.netlify.app/",
@@ -199,6 +222,27 @@ const projects = [
     ],
   },
   {
+    name: "Learning Vue Project",
+    subtitle: "Learning basics of Vue",
+    link: "https://deft-moonbeam-73e767.netlify.app/",
+    info: "",
+    image: vue,
+    gitrepo: "https://github.com/rohms/learning-vue",
+    description: "I was learning the basics of Vue with following Vue Mastery.",
+    skills: [
+      {
+        name: "js",
+        src: js,
+        alt: "css3-logo",
+      },
+      {
+        name: "vue",
+        src: vue,
+        alt: "vue-logo",
+      },
+    ],
+  },
+  {
     name: "React TypeScript Quiz",
     subtitle: "Learning to use TypeScript with react",
     link: "https://stellar-quokka-69a049.netlify.app/",
@@ -235,7 +279,7 @@ const Projects = () => {
           <h1>Apps and projects I have built</h1>
           <p>Click on the card image to open in a new window</p>
         </div>
-        <div className="my-projects__grid">
+        <div className="projects__grid">
           {projects.map((project) => (
             <Card
               key={project.name}
