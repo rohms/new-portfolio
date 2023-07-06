@@ -1,12 +1,16 @@
 import { PropTypes } from "prop-types";
 
-const Badge = ({ imageSrc, altText }) => {
+const Badge = ({ imageSrc, altText, tag }) => {
+
+  const capitalizedF = (tag) = tag.charAt(0).toUpperCase() + tag.slice(1); 
+
   return (
-    <>
-      <span className="badge-container">
+    <div className="badge-container gradientbg">
+      <span className="badge">
         <img src={imageSrc} alt={altText} />
+        <p className="tag">{capitalizedF}</p>
       </span>
-    </>
+    </div>
   );
 };
 
