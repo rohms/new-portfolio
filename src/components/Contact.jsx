@@ -53,19 +53,19 @@ const Contact = () => {
 
   return (
     <>
-      <section id="contact" className="contact--container">
+      <section id="contact">
         <form
           data-netlify="true"
           name="contact"
-          className="contact--form"
+          className="contact-form"
           onSubmit={handleSubmit}
         >
-          <h2>Get in touch with me</h2>
+          <h2>Get in touch</h2>
           <p>
-            Get in touch with me if you can cool ideas or want me to work with
-            you!
+            Get in touch with me if you are interested to work with
+            me!
           </p>
-          <div className="contact--form__label--inputs">
+          <div className="contact-form__label--inputs">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -92,7 +92,7 @@ const Contact = () => {
               onChange={handleChange}
             />
 
-            <button type="submit" className="contact--form__submit">
+            <button type="submit" className="contact-form__submit">
               Submit
             </button>
           </div>

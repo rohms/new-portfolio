@@ -1,0 +1,33 @@
+.invisible {
+  opacity: 0;
+  height: 10;
+}
+
+.nomrg {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.gradient {
+  background: -webkit-linear-gradient(
+    30deg,
+    rgb(58, 60, 180) 0%,
+    rgba(253, 29, 118, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientbg {
+  background: -webkit-linear-gradient(
+    30deg,
+    /* rgb(58, 60, 180) 0%, */
+    rgb(238, 102, 157) 0%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.max-text {
+  max-width: 700px;
+}

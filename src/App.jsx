@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useMemo } from "react";
 import { Navbar } from "./components/Navbar";
 import { About } from "./components/About";
 import { Projects } from "./components/Projects";

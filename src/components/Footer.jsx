@@ -1,23 +1,12 @@
 import React from "react";
-import stackoverflow from "/stackoverflow.png";
+import stackoverflow from "/stack.svg";
 import linkedin from "/linkedin.png";
 import github from "/github.svg";
-import codewars from "/codewars.svg";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <ul className="social-list">
-        <li className="social-list__item">
-          <a
-            href="https://www.codewars.com/users/rohms"
-            className="social-list__link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={codewars} alt="codewars-logo" />
-          </a>
-        </li>
         <li className="social-list__item">
           <a
             href="https://stackoverflow.com/users/17149568/rohms"
@@ -48,6 +37,17 @@ const Footer = () => {
             <img src={github} alt="github-logo" />
           </a>
         </li>
+        <a
+          href="https://www.codewars.com/users/rohms"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="codewars-badge"
+            src="https://www.codewars.com/users/rohms/badges/micro"
+            alt="codewars-status"
+          />
+        </a>
       </ul>
     </footer>
   );
