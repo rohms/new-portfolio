@@ -2,7 +2,8 @@
 Portfolio built with Vite and React
 
 
-![image](https://user-images.githubusercontent.com/86847314/226010325-11ea44f4-f28d-4b66-b2e4-a47cdc659a64.png)
+![portfolio](https://github.com/rohms/new-portfolio/assets/86847314/1a1ef038-dd15-4ce5-8361-fe8e181e1d09)
+
 
 
 For this portoflio project I used Vite, cause it makes things so much quicker!
