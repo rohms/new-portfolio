@@ -34,44 +34,36 @@ const skillBadges = [
 const Skills = () => {
   return (
     <>
-      <section id="skills" >
-       <div className="wrapper">
-        <div className="section-skills max-text">
-        <h1 className="gradient">Skills &amp; Technologies</h1>
-        
-        <p>
-          I have worked mostly with React and JavaScript. Fetching,
-          manipulating and displaying data. Aligning buttons and boxes and making things look pretty. Creating oldschool Email templates with HTML for email providers. Finding my way in the React hooks jungle. Knowing how to keep things type safe with TypeScript. I learned how to kill your dear divs, it's not like sprinkling salt on top of your food. If you put too much, it's not good for you. 🍕
-        </p>
-        <p>
-          I use Figma. Storybook is a home for your components. Making React apps quick
-          with Vite! (Never going back to create-react-apps!) Did write tests with Vitest, and React Testing Library to catch those little bugs! Tracking issues in Sentry. Knowing that Cypress does not stand only for a tree. 🧐
-        </p>
-        <p>
-          Currently learning GraphQL queries and mutations and RTK (Redux
-          Toolkit) for state management. Honing my JS skills. Lately been busy with Cypress and PHP. Learning never ends says the wise one. 🧙‍♀️
-        </p>
-        
-        </div>
+      <section id="skills">
+          <h1 className="gradient">Skills &amp; Technologies</h1>
+          <p className="max-text">
+            I have worked mostly with React and JavaScript. Fetching,
+            manipulating and displaying data. Aligning buttons and boxes and making things look pretty. Creating oldschool Email templates with HTML for email providers. Finding my way in the React hooks jungle. Knowing how to keep things type safe with TypeScript. I learned how to kill your dear divs, it's not like sprinkling salt on top of your food. If you put too much, it's not good for you. 🍕
+          </p>
+          <p className="max-text">
+            I use Figma. Storybook is a home for your components. Making React apps quick
+            with Vite! (Never going back to create-react-apps!) Did write tests with Vitest, and React Testing Library to catch those little bugs! Tracking issues in Sentry. Knowing that Cypress does not stand only for a tree. 🧐
+          </p>
+          <p className="max-text">
+            Currently learning GraphQL queries and mutations and RTK (Redux
+            Toolkit) for state management. Honing my JS skills. Lately been busy with Cypress and PHP. Learning never ends says the wise one. 🧙‍♀️
+          </p>
+       
         <img src={ai} alt="neural network" className="neural" />
         {/* Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3685928">Gerd Altmann</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3685928">Pixabay</a> */}
-        </div>
-      <div className="skills-badges">
-        <h2 className="badges-header gradient">
-          Libraries and frameworks I have worked with:
-        </h2>
-
-        <div className="badges">
-          {skillBadges.map((skill) => (
-            <Badge
-              key={skill.alt}
-              imageSrc={skill.imgSrc}
-              altText={skill.alt}
-              tag={skill.tag}
-            />
-          ))}
-        </div>
-        </div>
+          <h2 className="gradient">
+            Libraries and frameworks I have worked with:
+          </h2>
+          <div className="badges">
+            {skillBadges.map((skill) => (
+              <Badge
+                key={skill.alt}
+                imageSrc={skill.imgSrc}
+                altText={skill.alt}
+                tag={skill.tag}
+              />
+            ))}
+          </div>
       </section>
     </>
   );

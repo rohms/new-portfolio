@@ -25,6 +25,7 @@ import jokegen from "@assets/jokegen.jpg";
 import signup from "@assets/signup.jpg";
 import github from "@assets/githubsearch.jpg";
 import graphql from "@assets/badges/graphql.png";
+import moving from "@assets/movingb.jpg";
 
 const projects = [
     {
@@ -69,6 +70,29 @@ const projects = [
       ],
       description:
         "Webpage for the L-Night group. ReactJS, hooks, CSS3, HTML5 and Material UI. Backend: NodeJS, Express and MongoDB.",
+    },
+    {
+      name: "Bootstrap 5 - Moving company",
+      subtitle: "Using Bootstrap 5 with HTML5 and JS",
+      link: "https://golden-nasturtium-b9a100.netlify.app/",
+      info: "",
+      image: moving,
+      type: "other",
+      gitrepo: "https://github.com/rohms/moving-berlin",
+      description:
+        "Using Bootstrap to create a moving company landing page",
+      skills: [
+        {
+          name: "bootstrap",
+          src: bootstrap,
+          alt: "bootstrap-logo",
+        },
+        {
+          name: "react",
+          src: react,
+          alt: "react-logo",
+        },
+      ],
     },
     {
       name: "TechPanda mockpage",
