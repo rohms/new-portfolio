@@ -65,7 +65,6 @@ const Contact = () => {
             Get in touch with me if you are interested to work with
             me!
           </p>
-          <div className="contact-form__label--inputs">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -92,10 +91,9 @@ const Contact = () => {
               onChange={handleChange}
             />
 
-            <button type="submit" className="contact-form__submit">
+            <button type="submit" className="submit">
               Submit
             </button>
-          </div>
         </form>
       </section>
     </>
