@@ -54,7 +54,6 @@ header {
     rgb(180, 58, 180) 0%,
     rgb(255, 10, 112) 100%
   );
-  padding-bottom: 0.5rem;
 }
 
 .navbar-container {
@@ -387,8 +386,7 @@ nav > a:hover::after {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
   justify-content: center;
   grid-gap: 1.5rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin: 0 3rem 3rem;
 }
 
 hr.icon {
@@ -417,7 +415,7 @@ hr.icon {
 
 #contact {
   height: 100vh;
-  margin-top: 4rem;
+  margin: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -427,13 +425,12 @@ hr.icon {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
   padding: 3rem 3.25rem;
   background-color: #f02eaa66;
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
     rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
     rgba(240, 46, 170, 0.05) 25px 25px;
-  margin-bottom: 5rem;
 }
 
 .contact-form > h2, label {
@@ -516,12 +513,6 @@ footer {
   padding: 1rem 0;
   font-size: var(--fs-h3);
   bottom: 0;
-  position: absolute;
-}
-
-.footer a {
-  color: inherit;
-  text-decoration: none;
 }
 
 .footer__link {
@@ -533,12 +524,18 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0 0.5rem;
-  padding: 0;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  
 }
 
-.social-list__item {
-  margin: 0 0.5em;
+
+.social-list > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .social-list__item .codewars-badge {
@@ -548,17 +545,12 @@ footer {
 }
 
 .social-list__item > a > img {
-  height: 2rem;
   width: 2rem;
   transition: transform 0.2s ease;
 }
 
 .social-list__item > a > img:hover {
   opacity: 0.6;
-}
-
-.social-list__link {
-  padding: 0.5em;
 }
 
 @media (max-width: 768px) {

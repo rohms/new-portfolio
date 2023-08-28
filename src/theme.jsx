@@ -1,10 +1,10 @@
-import { grey, teal, cyan, indigo, blueGrey } from "@mui/material/colors";
+import { grey, teal, blueGrey } from "@mui/material/colors";
 
 const light = {
   palette: {
     mode: "light",
     background: {
-      default:  teal[100],
+      default:  "#EEEEEF",
     },
     text: {
       primary: grey[900],
