@@ -12,7 +12,6 @@ import graphql from "@assets/badges/graphql.png";
 import vue from "@assets/badges/vue.svg";
 import bootstrap from "@assets/badges/bootstrap.svg";
 import ai from "@assets/ai.png"
-import "../styles/skills.css";
 
 import { Badge } from "./Badge";
 
@@ -33,9 +32,9 @@ const skillBadges = [
 
 const Skills = () => {
   return (
-    <>
       <section id="skills">
           <h1 className="gradient">Skills &amp; Technologies</h1>
+          
           <p className="max-text">
             I have worked mostly with React and JavaScript. Fetching,
             manipulating and displaying data. Aligning buttons and boxes and making things look pretty. Creating oldschool Email templates with HTML for email providers. Finding my way in the React hooks jungle. Knowing how to keep things type safe with TypeScript. I learned how to kill your dear divs, it's not like sprinkling salt on top of your food. If you put too much, it's not good for you. 🍕
@@ -65,7 +64,6 @@ const Skills = () => {
             ))}
           </div>
       </section>
-    </>
   );
 };
 

@@ -3,7 +3,6 @@ import { ColorToggle } from "./ColorToggle";
 
 const Navbar = () => {
   return (
-    <>
       <header>
         <div className="navbar-container">
           <a href="#about" className="navbar__logo">
@@ -18,7 +17,6 @@ const Navbar = () => {
         </div>
         <ColorToggle />
       </header>
-    </>
   );
 };
 

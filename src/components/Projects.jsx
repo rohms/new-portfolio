@@ -9,7 +9,6 @@ const Projects = () => {
   const filteredProjects = myproject ? projects.filter((project) => project.type === myproject) : projects;
 
   return (
-    <>
       <section id="projects">
         <div className="projects__search-divider">
           <div className="projects-container__info">
@@ -18,7 +17,7 @@ const Projects = () => {
               <MySelect project={myproject} setProject={setMyProject} />
           </div>
           <hr className="icon"  />
-      </div>
+        </div>
         <div className="projects__grid">
           {filteredProjects.map((project) => (
             <Card
@@ -29,9 +28,7 @@ const Projects = () => {
             />
           ))}
         </div>
-      
       </section>
-    </>
   );
 };
 

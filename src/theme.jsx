@@ -4,13 +4,13 @@ const light = {
   palette: {
     mode: "light",
     background: {
-      default:  "#EEEEEF",
+      default:  blueGrey[50],
     },
     text: {
       primary: grey[900],
     },
     secondary: {
-      main: blueGrey[500], // Set the color of the h2 headers
+      main: blueGrey[500],
     },
   },
 };
@@ -18,8 +18,11 @@ const light = {
 const dark = {
   palette: {
     mode: "dark",
+    background: {
+      default:  grey[900],
+    },
     text: {
-      primary: grey[200],
+      primary: blueGrey[200],
     },
   },
 };

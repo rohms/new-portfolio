@@ -52,7 +52,6 @@ const Contact = () => {
   };
 
   return (
-    <>
       <section id="contact">
         <form
           data-netlify="true"
@@ -96,7 +95,6 @@ const Contact = () => {
             </button>
         </form>
       </section>
-    </>
   );
 };
 

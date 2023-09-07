@@ -5,7 +5,6 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { Button } from '@mui/material';
 
-
 const MySelect = ({project, setProject}) => {
     
     const handleChange = (event) => {
